@@ -1,14 +1,14 @@
 import React, { useRef, useState, useEffect } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import Packages from './components/Packages';
-import Info from './components/Info';
-import FAQ from './components/FAQ';
-import Footer from './components/Footer';
-import EditModeToggle from './components/EditModeToggle';
-import WhatsAppButton from './components/WhatsAppButton';
+import Header from './components/Header.tsx';
+import Hero from './components/Hero.tsx';
+import About from './components/About.tsx';
+import Services from './components/Services.tsx';
+import Packages from './components/Packages.tsx';
+import Info from './components/Info.tsx';
+import FAQ from './components/FAQ.tsx';
+import Footer from './components/Footer.tsx';
+import EditModeToggle from './components/EditModeToggle.tsx';
+import WhatsAppButton from './components/WhatsAppButton.tsx';
 
 const App: React.FC = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -58,7 +58,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#FEFBF9] min-h-screen text-[#4A4A4A]">
+    <div className="bg-background min-h-screen text-text-main">
       <Header 
         aboutRef={aboutRef}
         servicesRef={servicesRef}

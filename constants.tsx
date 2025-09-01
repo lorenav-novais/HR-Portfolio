@@ -1,5 +1,4 @@
-import React from 'react';
-import { ServiceItem, PackageItem } from './types';
+import { ServiceItem, PackageItem } from './types.ts';
 import { 
   MagnifyingGlassIcon, 
   DocumentTextIcon, 
@@ -7,7 +6,7 @@ import {
   ChatBubbleOvalLeftEllipsisIcon, 
   BriefcaseIcon,
   StarIcon 
-} from './components/Icons';
+} from './components/Icons.tsx';
 
 export const services: ServiceItem[] = [
   {
